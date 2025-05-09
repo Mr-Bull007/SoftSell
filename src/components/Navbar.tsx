@@ -8,11 +8,7 @@ const Navbar = () => {
     <section className="bg-white dark:bg-gray-900 py-4 fixed top-0 w-full z-50 shadow-md">
       <nav className="max-w-6xl mx-auto px-4 flex justify-between items-center">
         <a href="#" className="flex items-center gap-2">
-          <img
-            src="/src/assets/favicon.ico"
-            alt="SoftSell Logo"
-            className="h-10"
-          />
+          <img src="/public/favicon.ico" alt="SoftSell Logo" className="h-10" />
           <span className="font-bold text-lg text-gray-900 dark:text-white">
             SoftSell
           </span>
