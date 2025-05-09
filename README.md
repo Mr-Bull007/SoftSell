@@ -1,54 +1,96 @@
-# React + TypeScript + Vite
+# SoftSell – Used Software License Resale Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SoftSell is a sleek, responsive one-page website built with React.js and TailwindCSS that enables users to sell unused software licenses. Designed as a fictional startup, this marketing site showcases the value proposition, process, customer testimonials, and contact options — making it perfect for SaaS resellers and similar domains.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 💡 Clear Hero Section with Call-to-Action
+- 🧭 Sticky Navbar with Smooth Scroll Navigation
+- 🌗 Dark/Light Mode Toggle
+- ✨ Animations with Framer Motion
+- 💬 Customer Testimonials (UI Faces Integration)
+- 📱 Fully Responsive Design
+- 🧾 Contact Form with Validation using `react-hook-form`
+- 📈 SEO Meta Tags & Optimized Page Title
+- 🍔 Hamburger Menu for Mobile Navigation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Tech Stack
+
+- **React.js**
+- **Tailwind CSS**
+- **Framer Motion** – for animations
+- **React Hook Form** – for form validation
+- **UI Faces** – avatar images for testimonials
+
+---
+
+## 📁 Folder Structure
+
+src/
+├── assets/ # Logo and image assets
+├── components/
+│ ├── Navbar.tsx
+│ ├── Hero.tsx
+│ ├── HowItWorks.tsx
+│ ├── WhyChooseUs.tsx
+│ ├── Testimonials.tsx
+│ ├── ContactForm.tsx
+│ ├── ThemeToggle.tsx
+├── App.tsx
+├── index.tsx
+
+
+---
+
+## 🧪 Getting Started
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/softsell.git
+cd softsell
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### 2. Install Dependencies
+```bash
+npm install
 ```
+
+### 3. Start the Development Server
+```bash
+npm run dev
+```
+The site will be available at http://localhost:5173.
+
+## 🔧 Customization
+- Logo: Replace /src/assets/logo-32x32.png with your actual brand image.
+
+- Theme Colors: Customize tailwind.config.ts to suit your palette.
+
+- SEO: Modify meta tags in index.html.
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+## 📌 To Do (Optional Enhancements)
+- Integrate backend for form submission.
+
+- Add actual payment/resale logic.
+
+- Deploy via Vercel/Railway/Netlify.
+
+## 🙌 Acknowledgements
+- UI Faces for testimonial avatars.
+
+- HeroIcons for clean icons.
+
+- Framer Motion for animation magic.
+
+## 📃 License
+This project is for educational/demo purposes. Customize and reuse freely.
