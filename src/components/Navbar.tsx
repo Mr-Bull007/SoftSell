@@ -9,7 +9,7 @@ const Navbar = () => {
       <nav className="max-w-6xl mx-auto px-4 flex justify-between items-center">
         <a href="#" className="flex items-center gap-2">
           <img
-            src="/src/assets/logo-32x32.png"
+            src="/public/logo-32x32.png"
             alt="SoftSell Logo"
             className="h-10"
           />
